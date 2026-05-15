@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./HomePage.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -204,9 +205,9 @@ const HomePage = () => {
           </ul>
         </nav>
 
-        <a href="./contact-us.html" className="cta-btn-nav">
+        <Link to="/contact-us" className="cta-btn-nav">
           Book Direct
-        </a>
+        </Link>
       </header>
 
       {/* Hero Section */}
@@ -354,10 +355,10 @@ const HomePage = () => {
             </div>
 
             <div className="welcome-cta">
-              <a href="./contact-us.html" className="btn-primary-animated">
+              <Link to="/contact-us" className="btn-primary-animated">
                 CONTACT US
                 <span className="btn-shimmer"></span>
-              </a>
+              </Link>
               <a href="./rv-sites.html" className="btn-secondary-outline">
                 RV Sites
               </a>
