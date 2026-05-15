@@ -1,3 +1,31 @@
+:root {
+  --gold: #f37321;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.1);
+  --text-gray: #555; /* For main body text */
+  --soft-bg: #f9f9f9;
+
+  /* Footer Specific Variables */
+  --primary-blue: #16a2a4;
+  --accent-gold: #f37321;
+  --dark-bg: #1a1a1a;
+  --footer-text-gray: #b0b0b0; /* Renamed to prevent overwriting body text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: var(--dark);
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -1385,6 +1413,7 @@ nav ul a {
 }
 
 /* --- FOOTER --- */
+/* --- FOOTER --- */
 .custom-footer {
   background-color: var(--dark-bg);
   color: white;
@@ -1430,7 +1459,7 @@ nav ul a {
 }
 
 .footer-col ul li a {
-  color: var(--text-gray);
+  color: var(--footer-text-gray); /* Fixed to use light gray */
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 19px;
@@ -1443,7 +1472,7 @@ nav ul a {
 }
 
 .contact-info p {
-  color: var(--text-gray);
+  color: var(--footer-text-gray); /* Fixed to use light gray */
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -1487,6 +1516,22 @@ nav ul a {
   color: #fff;
 }
 
+/* Testimonial Box (From original CSS) */
+.footer-quote {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent-gold);
+  margin-top: 30px;
+}
+
+.footer-quote p {
+  font-style: italic;
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
 .social-links {
   display: flex;
   gap: 15px;
@@ -1509,6 +1554,38 @@ nav ul a {
 .social-links a:hover {
   background: var(--primary-blue);
   transform: scale(1.1);
+}
+
+/* Newsletter (From original CSS) */
+.newsletter-form {
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 12px;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.newsletter-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-blue);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.newsletter-btn:hover {
+  background: #0e8587;
 }
 
 .footer-bottom {
