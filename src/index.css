@@ -1,0 +1,23 @@
+:root {
+  --gold: #f37321;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.1);
+  --text-gray: #555;
+  --soft-bg: #f9f9f9;
+  --primary-blue: #16a2a4;
+  --accent-gold: #f37321;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: var(--dark);
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
